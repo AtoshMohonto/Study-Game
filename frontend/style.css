@@ -1,0 +1,162 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #34495e;
+  border-radius: 4px;
+}
+
+/* Dropdown */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #34495e;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul li {
+  margin: 0;
+}
+
+nav ul ul li a {
+  display: block;
+  padding: 8px 12px;
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #3498db;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #fff;
+  color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero button:hover {
+  background: #2980b9;
+  color: #fff;
+}
+
+/* Features section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+/* Games section */
+section h2 {
+  text-align: center;
+  margin: 30px 0 15px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+#games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
